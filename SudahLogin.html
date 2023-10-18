@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SausTech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body>
+  <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg fw-bold">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="LandingPage.html">
+          <img src="img/logo.jpg" alt="logonavbar">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-5 mb-lg-0 ms-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="list-umkm/list_umkm.html">List UMKM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="artikel/artikel(all).html">Artikel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="daftar-umkm/daftarumkm.html">Daftar UMKM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#tentang">Tentang</a>
+            </li>
+          </ul>
+          <a onclick="authRole()">
+          <img id="profil-navbar" src="img/fotoprofil.png" alt="logonavbar">
+        </a>
+        </div>
+      </div>
+    </nav>  
+    <!-- Akhir Navbar -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bannerumkm.jpg" class="d-block w-100" alt="..." height="550px">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bannerumkm.jpg" class="d-block w-100" alt="..." height="550px">
+        </div>
+        <div class="carousel-item">
+          <img src="img/bannerumkm.jpg" class="d-block w-100" alt="..." height="550px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Akhir Carousel -->
+
+    <!-- Tentang -->
+    <div id="tentang" class="container-about">
+      <div class="container-desc">
+        <h2 class="display-3" id="tentang">Tentang Kami</h2>
+        <p class="atas">Platform digital yang didedikasikan untuk mempromosikan dan mendukung Usaha Mikro, Kecil, dan Menengah (UMKM) Indonesia. Dan tujuan lain nya adalah :</p>
+      </div>
+    </div>
+    <div class="rowbgt" id="foto">
+      <div class="foto">
+        <img src="img/ikon1.png" class="card-image-top" alt="...">
+        <h4>Meningkatkan Visibilitas</h4>
+        <p>Platform ini bertujuan untuk membuat UMKM lebih mudah ditemukan oleh konsumen potensial dan menarik perhatian investor.</p>
+      </div>
+      <div class="foto">
+        <img src="img/ikon2.png" class="card-image-top" alt="...">
+        <h4>Menjadi Penghubung</h4>
+        <p>Melalui platform ini, UMKM dapat berkolaborasi, dan memperluas jaringan untuk meningkatkan pertumbuhan dan ekspansi bisnis mereka.</p>
+      </div>
+    </div>
+    <!-- Akhir Tentang -->
+
+    <!-- Artikel -->
+    <div class="container-card" style="margin-top: 30px;">
+      <h2>Artikel</h2>
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <img src="img/card1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" style="text-decoration: none; color: black;">
+                <h5 class="card-title">Potret UMKM Keripik Tempe di Tangerang, Omzet Tembus Rp 100 Juta/bulan</h5>
+              </a>
+              <p class="card-text">Dengan fokus pada produksi keripik tempe berkualitas tinggi, pemasaran yang efektif, dan pemenuhan permintaan pelanggan yang stabil, bisnis ini telah mencapai tingkat kesuksesan yang mengesankan dalam waktu singkat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img src="img/card2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <a href="#" style="text-decoration: none; color: black;">
+                <h5 class="card-title">Omzet Toko Kelontong SRC Rp 236 T, Sumbang Segini ke PDB</h5>
+              </a>
+              <p class="card-text">Omzet Toko SRC secara keseluruhan pada tahun 2022 diperkirakan mencapai Rp 236 triliun, atau setara dengan 11,36% dari total produk domestik bruto (PDB) Retail Nasional tahun 2022 yang sebesar Rp 2.077,43 triliun. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Artikel -->
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container p-4">
+      <div class="row my-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="img/logo.jpg" height="150" alt="" loading="logo" />
+          </div>
+          <p class="text-center" style="color: black;">Sebuah perusahaan inovatif yang muncul sebagai penghubung antara UMKM yang berpotensi dan para investor yang mencari peluang investasi yang menjanjikan.</p>
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-black px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-black px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-black ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Fitur</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="list-umkm/list_umkm.html" class="text-black"><i class="fas fa-list pe-3"></i>List UMKM</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-newspaper pe-3"></i>Berita</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-sign pe-3"></i>Daftar UMKM</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-file pe-3"></i>Artikel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Perusahaan</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-user pe-3"></i>Tim</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-book pe-3"></i>Kontak</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p style="color: black;"><i class="fas fa-map-marker-alt pe-2"></i>Jl. Pegangsaan Timur No. 52</p>
+            </li>
+            <li>
+              <p style="color: black;"><i class="fas fa-phone pe-2"></i>08123456789</p>
+            </li>
+            <li>
+              <p style="color: black;"><i class="fas fa-envelope pe-2 mb-0"></i>dukungUMKM@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="#">SausTech's</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Akhir Footer -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>

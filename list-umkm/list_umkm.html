@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List UMKM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <style>
+    .btn-custom {
+      background-color: #34a853;
+      color: #fff;
+    }
+    div.list-umkm {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .list-umkm .card {
+      margin: 20px;
+    }
+    .has-search .form-control {
+      padding-left: 2.375rem;
+    }
+
+    .has-search .form-control-feedback {
+      position: absolute;
+      z-index: 2;
+      display: block;
+      width: 2.375rem;
+      height: 2.375rem;
+      line-height: 2.375rem;
+      text-align: center;
+      pointer-events: none;
+      color: #aaa;
+    }
+  </style>
+
+  <body>
+      <!-- Navbar  -->
+      <nav class="navbar navbar-expand-lg fw-bold">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../SudahLogin.html">
+            <img src="../img/logo.jpg" alt="logonavbar">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-5 mb-lg-0 ms-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="list_umkm.html">List UMKM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../artikel/artikel(all).html">Artikel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../daftar-umkm/daftarumkm.html">Daftar UMKM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../SudahLogin.html#tentang">Tentang</a>
+              </li>
+            </ul>
+            <a href="#">
+            <img id="profil-navbar" src="../img/fotoprofil.png" alt="logonavbar">
+          </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header -->
+
+    <div class="header">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/img_header1.png" class="d-block w-100" alt="Gamabar Header 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/img_header2.png" class="d-block w-100" alt="Gambar Header 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/img_header3.png" class="d-block w-100" alt="Gambar Header 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card List -->
+    <div class="container mt-5 list-umkm">
+      <div class="col-md-8">
+        <h4>Temukan UMKM</h4>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Cari UMKM yang diinginkan"
+          />
+        </div>
+      </div>
+      <div class="card" style="width: 500px">
+        <img src="../img/list1.png" class="card-img-top" alt="UMKM 1" />
+        <div class="card-body">
+          <br />
+          <h6 class="card-title text-center">Snacks Ndeso</h6>
+          <p class="card-title text-center">
+            UMKM yang menjual berbagai macam aneka snacks ndeso
+          </p>
+          <br />
+          <br />
+          <a href="../detailumkm.html" class="btn btn-custom">Lihat Detail</a>
+          <i
+            class="far fa-heart fa-2x float-end mt-1.5"
+            data-favorite="false"
+            onclick="toggleFavorite(this)"
+          ></i>
+        </div>
+      </div>
+      <div class="card" style="width: 500px">
+        <img src="../img/list2.png" class="card-img-top" alt="UMKM 2" />
+        <div class="card-body">
+          <br />
+          <h6 class="card-title text-center">Wonder Shop</h6>
+          <p class="card-title text-center">
+            UMKM yang menjual kerajinan untuk souvenir maupun hadiah
+          </p>
+          <br />
+          <br />
+          <a href="#" class="btn btn-custom">Lihat Detail</a>
+          <i
+            class="far fa-heart fa-2x float-end mt-1.5"
+            data-favorite="false"
+            onclick="toggleFavorite(this)"
+          ></i>
+        </div>
+      </div>
+      <div class="card" style="width: 500px">
+        <img src="../img/list3.png" class="card-img-top" alt="UMKM 3" />
+        <div class="card-body">
+          <br />
+          <h6 class="card-title text-center">Unikat Store</h6>
+          <p class="card-title text-center">
+            UMKM yang menjual berbagai jenis kerajinan tangan
+          </p>
+          <br />
+          <br />
+          <a href="#" class="btn btn-custom">Lihat Detail</a>
+          <i
+            class="far fa-heart fa-2x float-end mt-1.5"
+            data-favorite="false"
+            onclick="toggleFavorite(this)"
+          ></i>
+        </div>
+      </div>
+      <div class="card" style="width: 500px">
+        <img src="../img/list4.png" class="card-img-top" alt="UMKM4" />
+        <div class="card-body">
+          <br />
+          <h6 class="card-title text-center">Mode Modern</h6>
+          <p class="card-title text-center">
+            UMKM yang menjual hasil desain ataupun reques desain
+          </p>
+          <br />
+          <br />
+
+          <a href="#" class="btn btn-custom">Lihat Detail</a>
+          <i
+            class="far fa-heart fa-2x float-end mt-1.5"
+            data-favorite="false"
+            onclick="toggleFavorite(this)"
+          ></i>
+        </div>
+      </div>
+      <div class="card" style="width: 500px">
+        <img src="../img/list5.png" class="card-img-top" alt="UMKM 5" />
+        <div class="card-body">
+          <br />
+          <h6 class="card-title text-center">Kreatifkay</h6>
+          <p class="card-title text-center">
+            UMKM yang menjual berbagai kerajinan dari kayu
+          </p>
+          <br />
+          <br />
+          <a href="#" class="btn btn-custom">Lihat Detail</a>
+          <i
+            class="far fa-heart fa-2x float-end mt-1.5"
+            data-favorite="false"
+            onclick="toggleFavorite(this)"
+          ></i>
+        </div>
+      </div>
+      <div class="card" style="width: 500px">
+        <img src="../img/list6.png" class="card-img-top" alt="UMKM 6" />
+        <div class="card-body">
+          <br />
+          <h6 class="card-title text-center">Mayai</h6>
+          <p class="card-title text-center">
+            UMKM yang menjual ikan teri dengan berbagai rasa
+          </p>
+          <br />
+          <br />
+          <a href="#" class="btn btn-custom">Lihat Detail</a>
+          <i
+            class="far fa-heart fa-2x float-end mt-1.5"
+            data-favorite="false"
+            onclick="toggleFavorite(this)"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container p-4">
+      <div class="row my-4">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="../img/logo.jpg" height="150" alt="" loading="logo" />
+          </div>
+          <p class="text-center" style="color: black;">Sebuah perusahaan inovatif yang muncul sebagai penghubung antara UMKM yang berpotensi dan para investor yang mencari peluang investasi yang menjanjikan.</p>
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-black px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-black px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-black ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Fitur</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-list pe-3"></i>List UMKM</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-newspaper pe-3"></i>Berita</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-sign pe-3"></i>Daftar UMKM</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-file pe-3"></i>Artikel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Perusahaan</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-user pe-3"></i>Tim</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-black"><i class="fas fa-book pe-3"></i>Kontak</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p style="color: black;"><i class="fas fa-map-marker-alt pe-2"></i>Jl. Pegangsaan Timur No. 52</p>
+            </li>
+            <li>
+              <p style="color: black;"><i class="fas fa-phone pe-2"></i>08123456789</p>
+            </li>
+            <li>
+              <p style="color: black;"><i class="fas fa-envelope pe-2 mb-0"></i>dukungUMKM@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright:
+      <a class="text-white" href="#">SausTech's</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Akhir Footer -->
+
+    <script>
+      function toggleFavorite(icon) {
+        // Dapatkan status favorite dari atribut data
+        var isFavorite = icon.getAttribute("data-favorite");
+
+        // Ubah status favorite
+        if (isFavorite === "false") {
+          icon.classList.remove("far");
+          icon.classList.add("fas", "text-danger");
+          icon.setAttribute("data-favorite", "true");
+        } else {
+          icon.classList.remove("fas", "text-danger");
+          icon.classList.add("far");
+          icon.setAttribute("data-favorite", "false");
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

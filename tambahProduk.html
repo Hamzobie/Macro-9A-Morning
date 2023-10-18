@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Tambah Produk</title>
+</head>
+
+<body>
+    <div class="button-container">
+        <a class="back-button" onclick="window.history.back()" href="#">
+            <i class="fa-solid fa-angle-left fa-xl"></i>
+        </a>
+        <h2 class="add-product-text">Tambah Produk</h2>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="image-container">
+                <img id="productImage" src="img/placehorder_tambahProduk.png" alt="Gambar Produk">
+            </div>
+            <div class="icon-plus-rectangle">
+                <a href="#" id="addImageLink">
+                    <i class="fa-solid fa-square-plus" style="color: #34a853;"></i>
+                </a>
+                <div class="rectangle"></div>
+            </div>
+        </div>
+        <div class="right">
+
+            <div class="input-box">
+                <label for="namaProduk">Nama Produk</label>:
+                <input type="text" id="namaProduk" placeholder="Masukkan nama produk">
+            </div>
+            <div class="input-box">
+                <label for="kategoriProduk">Kategori Produk</label>:
+                <input type="text" id="kategoriProduk" placeholder="Masukkan kategori produk">
+            </div>
+            <div class="input-box">
+                <label for="merkProduk">Merk Produk</label>:
+                <input type="text" id="merkProduk" placeholder="Masukkan merk produk">
+            </div>
+            <div class="input-box">
+                <label for="hargaProduk">Harga Produk</label>:
+                <input type="text" id="hargaProduk" placeholder="Masukkan harga produk">
+            </div>
+            <div class="input-box">
+                <label for="namaProduk">Variasi</label>
+            </div>
+            <div class="input-box">
+                <label for="warnaProduk">Warna Produk</label>:
+                <input type="text" id="warnaProduk" placeholder="Masukkan warna produk">
+            </div>
+            <div class="input-box">
+                <label for="ukuranProduk">Ukuran Produk</label>:
+                <input type="text" id="ukuranProduk" placeholder="Masukkan ukuran produk">
+            </div>
+            <div class="input-box">
+                <label for="stokProduk">Stok Produk</label>:
+                <input type="text" id="stokProduk" placeholder="Masukkan stok produk">
+            </div>
+        </div>
+    </div>
+    <div class="action-button">
+        <button type="edit">Edit</button>
+        <button type="submit">Kirim</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 0;
+}
+
+.button-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.back-button {
+    color: #000000;
+    margin-right: 10px;
+    padding: 10px 10px;
+}
+
+.add-product-text {
+    color: #000000;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+img#productImage {
+    max-height: 150px;
+}
+
+.icon-plus-rectangle {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative; 
+}
+
+.fa-square-plus {
+    font-size: 34px; 
+    position: absolute;
+    top: 0; 
+    z-index: 1; 
+}
+
+.rectangle {
+    width: 150px;
+    height: 33px; 
+    background-color: #C3EDC0;
+    border-radius: 5px;
+}
+
+.right {
+    flex: 4;
+    padding: 20px;
+}
+
+.tambahProduk {
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    font-size: 15px;
+    margin-bottom: 7px;
+    text-align: left; 
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 700px;
+    border-radius: 10px;
+    margin-left: 25px;
+    border: 1px solid #00000080; 
+    border-top: 1px solid #00000080; 
+    border-left: 1px solid #00000080;
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #34A853;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 90px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+</style>
+</html>

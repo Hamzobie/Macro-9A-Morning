@@ -1,0 +1,270 @@
+.navbar-brand img {
+  max-width: 50px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+.navbar {
+  font-family: sans-serif;
+  background-color: #769fcd;
+}
+
+.nav-link:hover {
+  background-color: #6096b4;
+  border-radius: 5px;
+  
+}
+
+.row {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+}
+
+.column img {
+  display: flex;
+  width: 200px;
+}
+
+.rounded-circle img {
+  border-radius: 100px;
+}
+
+.container-about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-desc {
+  text-align: center;
+}
+
+.atas {
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-about h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+.rowbgt {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.col-4 {
+  width: 35rem;
+}
+
+.container-card .row {
+  justify-content: center;
+}
+
+.container-card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+}
+.footer {
+  background-color: #769fcd;
+}
+
+.home h1 {
+  line-height: 0px;
+  margin: 200px 50px 25px;
+  font-family: "hand writing", cursive;
+}
+
+.home button {
+  margin-left: 80px;
+}
+
+#home {
+  width: 90%;
+  height: 50vh;
+  position: relative;
+}
+
+.welkom { 
+  width: 700px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  margin-top: -190px;
+}
+
+.fotoatas {
+  text-align: center;
+}
+
+.fotoatas2 {
+  display: inline-block;
+}
+
+h4 {
+  font-size: 170%;
+}
+
+#judulartikel1 {
+  text-align: center;
+  padding-top: 6%;
+}
+
+#tglartikel1 {
+  font-size: 90%;
+  padding-right: 65%;
+  padding-top: 3%;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+#tglartikel2 {
+  font-size: 80%;
+  padding-right: 65%;
+  margin-top: 0%;
+  margin: 0px;
+}
+
+#judulartikel2 {
+  text-align: center;
+  padding-top: 6%;
+  padding-right: 11%;
+}
+
+#tglartikel3 {
+  font-size: 90%;
+  padding-right: 58%;
+  padding-top: 3%;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+#tglartikel4 {
+  font-size: 80%;
+  padding-right: 57%;
+  margin-top: 0%;
+  margin: 0px;
+}
+
+#judulartikel3 {
+  text-align: center;
+  padding-top: 6%;
+  padding-right: 31%;
+}
+
+#tglartikel5 {
+  font-size: 90%;
+  padding-right: 48%;
+  padding-top: 5%;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+#tglartikel6 {
+  font-size: 80%;
+  text-align: center;
+  padding-right: 44%;
+}
+
+#judulartikel4 {
+  text-align: center;
+  padding-top: 6%;
+  padding-right: 29%;
+}
+
+#tglartikel7 {
+  font-size: 90%;
+  padding-right: 49%;
+  padding-top: 5%;
+  font-weight: bold;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+#tglartikel8 {
+  font-size: 84%;
+  text-align: center;
+  padding-right: 50%;
+}
+
+#isiartikel1 {
+  padding-top: 4%;
+  padding-left: 11%;
+  padding-right: 11%;
+}
+
+#isiartikel2 {
+  padding-top: 1%;
+  margin-bottom: 9%;
+  text-align: center;
+  font-size: 90%;
+  color: #3a3a3a;
+}
+
+#isiartikel1-artikel2 {
+  padding-top: 3%;
+  padding-left: 13%;
+  padding-right: 11%;
+}
+
+#isiartikel2-artikel2 {
+  padding-top: 3%;
+}
+
+#isiartikel1-artikel3 {
+  padding-top: 3%;
+  padding-left: 13%;
+  padding-right: 11%;
+}
+
+#isiartikel2-artikel3 {
+  padding-top: 3%;
+}
+
+.fototitindwi {
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 12px;
+}
+
+.fotobazar1 {
+  display: block;
+  margin: auto;
+}
+
+#profil-navbar {
+  max-width: 50px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
+
+.data-profile{
+  margin: 50px;
+  padding: 0px 20px 0px 20px;
+  background-color: #F7FBFC;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(194, 194, 194);
+}
+.card{
+  box-shadow: 3px 3px 5px rgb(194, 194, 194);
+}
+
+#logout{
+  background-color: red;
+  border-style: none;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Daftar UMKM</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: #ffffff;
+}
+
+form {
+  padding: 25px;
+  background: #fff;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px 2px rgba(95, 95, 95, 0.63);
+}
+
+form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+form label {
+  display: inline-block;
+  width: 220px;
+  font-size: 15px;
+  margin-bottom: 7px;
+  margin-left: 10px;
+  text-align: left; 
+  padding-right: 15px; 
+}
+
+form .input-box {
+  display: flex;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #00000069;
+  margin-left: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  border-color: #9a9a9a;
+}
+
+form input.error {
+  border-color: #f91919;
+  background: #f9f0f1;
+}
+
+form small {
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+
+form .password i, form .confirmPassword i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  line-height: 45px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+
+.form-group.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group.centered .checkbox label {
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+.form-group.centered .submit-btn input {
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background: #34a853;
+  color: white;
+  font-size: 18px;
+  padding: 0 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-group.centered .submit-btn input:hover {
+  background: #15947a;
+}
+
+  </style>
+</head>
+
+<body>
+  <form>
+    <h2>Daftar sebagai UMKM</h2>
+    <div class="form-group namaUMKM">
+      <div class="input-box">
+        <label for="namaUMKM">Nama UMKM</label>
+        <input type="text" id="namaUMKM" placeholder="Masukkan nama UMKM Anda">
+      </div>
+    </div>
+    <div class="form-group jenisUMKM">
+      <div class="input-box">
+        <label for="jenisUMKM">Jenis UMKM</label>
+        <input type="text" id="jenisUMKM" placeholder="Masukkan jenis UMKM Anda">
+      </div>
+    </div>
+    <div class="form-group alamatUMKM">
+      <div class="input-box">
+        <label for="alamatUMKM">Alamat UMKM</label>
+        <input type="text" id="alamatUMKM" placeholder="Masukkan alamat UMKM Anda">
+      </div>
+    </div>
+    <div class="form-group namaPemilik">
+      <div class="input-box">
+        <label for="namaPemilik">Nama Pemilik</label>
+        <input type="text" id="namaPemilik" placeholder="Masukkan nama pemilik UMKM">
+      </div>
+    </div>
+    <div class="form-group email">
+      <div class="input-box">
+        <label for="email">E-mail UMKM</label>
+        <input type="text" id="email" placeholder="Masukkan alamat email Anda">
+      </div>
+    </div>
+    <div class="form-group password">
+      <div class="input-box">
+        <label for="password">Kata Sandi
+          <i id="pass-toggle-btn" class="fa-solid fa-eye"></i>
+        </label>
+        <input type="password" id="password" placeholder="Masukkan kata sandi Anda">
+        <i id="pass-toggle-btn" class="fa-solid fa-eye" onclick="togglePassword()"></i>
+      </div>
+    </div>
+    <div class="form-group password">
+      <div class="input-box">
+        <label for="confirmPassword">Konfirmasi Kata Sandi
+          <i id="confirm-pass-toggle-btn" class="fa-solid fa-eye"></i>
+        </label>
+        <input type="password" id="confirmPassword" placeholder="Konfirmasi kata sandi Anda">
+        <i id="pass-toggle-btn" class="fa-solid fa-eye" onclick="togglePassword()"></i>
+      </div>
+    </div>
+    <div class="form-group centered">
+      <div class="checkbox">
+        <input type="checkbox" id="syarat-ketentuan" name="syarat-ketentuan" required>
+        <label for="syarat-ketentuan">Saya menyetujui syarat dan ketentuan</label>
+      </div>
+    </div>
+    <div class="form-group centered">
+      <a href="../SudahLogin.html">
+      <div class="submit-btn">
+        <input type="submit" value="Submit" onclick="window.location.href = '../Login.html';">
+      </a>
+      </div>
+    </div>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
