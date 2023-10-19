@@ -2,7 +2,7 @@ const users = [{username : "User1", password : "User1", role: "user"},
             {username :'umkm', password: 'umkm', role: "umkm"}];
 
 const roles = {
-    role : "user",
+    role : "umkm",
     get getRole(){
         return this.role;
     },
@@ -23,11 +23,11 @@ function authLogin() {
    alert('You are trying to break in!');
 }
 
-function authRole(){
+function authRole(umkm,user){
     if (roles.getRole == "umkm") {
-        window.location.href = 'ProfilePageUMKM.html';
+        window.location.href = umkm;
     } else {
-        window.location.href = 'ProfilePageUser.html';
+        window.location.href = user;
     }
 }
 
